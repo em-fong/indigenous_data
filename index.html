@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Database Design and Web Implementation Assignment #5 </title>
+  <link rel="stylesheet" type="text/css" href="native.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px" rel="stylesheet">
+</head>
+
+<body align="CENTER">
+  <h1> Assignment #5: Native/Indigenous Communities in the United States </h1>
+
+  <h3> <a href="https://www.census.gov/geo/maps-data/data/gazetteer2010.html"> Original Dataset </a> </h3>
+
+  <p> This dataset comes from the 2010 US Census, and is a collection of information about the various land holdings
+    of Native/Indigenous and Hawaiian groups in the country. The data is organized by geographic identifier code, American National
+    Standards code, tribe/group name, population count, housing unit count, area of land holdings in square meters, area of water
+    in square meters, land in square miles, water in square miles, and latitude/longitude coordinates.</p>
+
+<div class="box">
+  <br>
+  <form method="POST" action="native.py">
+
+    <label> Find nations by population: </label> <br><br>
+    <select name = "pop">
+      <option value = "<100"> Less than 100 </option>
+      <option value = "<1000"> 101-1000 </option>
+      <option value = "<10000"> 1001-10,000 </option>
+      <option value = "<100000"> 10001-100,000 </option>
+      <option value = ">100000"> More than 100,000 </option>
+    </select>
+
+<br><br><br>
+
+    <label> How many records do you want to see? </label> <br><br>
+    <select name="records">
+      <option value="5"> 5 </option>
+      <option value="10"> 10 </option>
+      <option value="15"> 15 </option>
+      <option value="20"> 20 </option>
+    </select>
+
+<br><br><br>
+
+    <label> Do you want to sort in descending or ascending order? </label> <br><br>
+    <select name="sort">
+      <option value="DESC"> Descending </option>
+      <option value="ASC"> Ascending </option>
+    </select>
+
+<br><br>
+<hr>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset Fields">
+  <br><br>
+
+  </form>
+<div>
+
+</body>
+</html>
